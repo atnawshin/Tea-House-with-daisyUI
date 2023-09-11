@@ -22,7 +22,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -45,7 +46,9 @@
                         Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </button>
                 </div>
                 <div>
                     <img src="images/banner.png" class="" />
@@ -144,7 +147,7 @@
         </section>
         <!-- super section -->
         <section
-            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
             <div class="flex lg:pr-28 items-center">
                 <div class="space-y-5">
                     <h2 class="text-5xl font-extrabold text-white">
@@ -218,8 +221,54 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Get Started</button>
+            </p>
+        </div>
+        <div class="footer">
+            <nav>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Legal</header>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <header class="footer-title">Newsletter</header>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com"
+                            class="py-4  bg-transparent border-b-2 border-black outline-none" />
+                        <button
+                            class="btn absolute top-0 right-0 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end text-white"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <aside class="mt-10 text-center">
+            <p>© 2027 UIDesign.to - All rights reserved.</p>
+        </aside>
     </footer>
 </body>
 
